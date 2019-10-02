@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : deriuha2.cpp
+// Name        : deriha1.cpp
 // Author      : deriuha
 // Version     :
 // Copyright   : Your copyright notice
@@ -9,7 +9,18 @@
 #include <iostream>
 using namespace std;
 
-int main() {
-	cout << "!!!Hello World!!!" << endl; // prints !!!Hello World!!!
-	return 0;
+#include "CAgent.h"
+#include "CSkreen.h"
+#include <stdio.h>
+
+int main()
+{
+    cout<<"Hello world"<<endl;
+	CAgent agent(2, 13, "bond", 2);
+	CSkreen skreen;
+
+	skreen.ScreenAgent(agent);
+
+
+    return 0;
 }
