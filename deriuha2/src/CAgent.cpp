@@ -6,7 +6,7 @@
  */
 
 #include "CAgent.h"
-#pragma once
+
 #include <string>
 
 	CAgent::CAgent(int unique_identifier, int nickname_length, string nickname , int type_specialty)
