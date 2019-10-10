@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : deriuha2.cpp
+// Name        : deriha1.cpp
 // Author      : deriuha
 // Version     :
 // Copyright   : Your copyright notice
@@ -11,16 +11,19 @@ using namespace std;
 
 #include "CAgent.h"
 #include "CSkreen.h"
+#include "CSkreen2.h"
 #include <stdio.h>
 
 int main()
 {
-    cout<<"Hello world"<<endl;
-	CAgent agent(2, 14, "bond", 2);
+	cout << "Hello world" << endl;
+	CAgent agent(2, 13, "bond2", 2);
 	CSkreen skreen;
+	CSkreen2 view2;
 
 	skreen.ScreenAgent(agent);
+	view2.GraphScreen(agent);
 
-
-    return 0;
+	return 0;
 }
+

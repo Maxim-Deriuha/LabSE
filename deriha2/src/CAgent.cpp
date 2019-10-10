@@ -1,12 +1,12 @@
 /*
  * CAgent.cpp
  *
- *  Created on: 3 זמגע. 2019 נ.
+ *  Created on: 2 זמגע. 2019 נ.
  *      Author: Acer
  */
 
 #include "CAgent.h"
-
+#pragma once
 #include <string>
 
 	CAgent::CAgent(int unique_identifier, int nickname_length, string nickname , int type_specialty)
@@ -17,9 +17,13 @@
 		this->type_specialty = type_specialty;
 	}
 
+	int CAgent::CheckSum() const {
 
+		return getNickname().length();
+	}
 
 
 CAgent::~CAgent()
 {
 }
+
