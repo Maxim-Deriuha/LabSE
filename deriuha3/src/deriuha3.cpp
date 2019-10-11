@@ -16,7 +16,7 @@ using namespace std;
 
 int main()
 {
-	cout << "Hello world1" << endl;
+	cout << "lab 3" << endl;
 	CAgent agent(2, 13, "James bond2", 2);
 	CSkreen skreen;
 	CSkreen2 view2;
