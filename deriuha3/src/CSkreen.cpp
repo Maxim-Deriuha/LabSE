@@ -1,11 +1,12 @@
 /*
  * CSkreen.cpp
  *
- *  Created on: 2 жовт. 2019 р.
+ *  Created on: 11 окт. 2019 г.
  *      Author: Acer
  */
 
 #include "CSkreen.h"
+
 #include "CAgent.h"
 
 #include <iostream>
@@ -21,7 +22,7 @@ void CSkreen::ScreenAgent(const CAgent& agent) {
 	cout << "nickname_length= " << agent.getNicknameLength() << endl;
 	cout << "nickname= " << agent.getNickname() << endl;
 	cout << "type_specialty= " << agent.type_specialty << endl;
-	cout << "nick dlin : " << agent.CheckSum() << endl;
+	cout << "nick_dlin : " << agent.CheckSum() << endl;
 }
 
 CSkreen::~CSkreen()

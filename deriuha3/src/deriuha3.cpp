@@ -1,5 +1,5 @@
 //============================================================================
-// Name        : deriha1.cpp
+// Name        : deriuha3.cpp
 // Author      : deriuha
 // Version     :
 // Copyright   : Your copyright notice
@@ -17,7 +17,7 @@ using namespace std;
 int main()
 {
 	cout << "Hello world1" << endl;
-	CAgent agent(2, 13, "bond2", 2);
+	CAgent agent(2, 13, "James bond2", 2);
 	CSkreen skreen;
 	CSkreen2 view2;
 
@@ -26,4 +26,3 @@ int main()
 
 	return 0;
 }
-
