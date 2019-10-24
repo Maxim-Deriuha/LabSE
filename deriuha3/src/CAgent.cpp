@@ -6,23 +6,19 @@
  */
 
 #include "CAgent.h"
-#pragma once
-#include <string>
 
-	CAgent::CAgent(int unique_identifier, int nickname_length, string nickname , int type_specialty)
-	{
-		this->unique_identifier = unique_identifier;
-		this->nickname_length = nickname_length;
-		this->nickname = nickname;
-		this->type_specialty = type_specialty;
-	}
+CAgent::CAgent(	int nickname_length,std::string nickname,int unic_id,int type_specialty) {
+	this->nickname_length = nickname_length;
+	this->nickname = nickname;
+	this->unic_id = unic_id;
+	this->type_specialty = type_specialty;
+}
 
-	int CAgent::CheckSum() const {
+CAgent::~CAgent() {
+	// TODO Auto-generated destructor stub
+}
 
-		return getNickname().length();
-	}
+int CAgent::CheckSum() const {
 
-
-CAgent::~CAgent()
-{
+	return getNickname().length();
 }

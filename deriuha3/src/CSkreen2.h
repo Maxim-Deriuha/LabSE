@@ -6,26 +6,27 @@
  */
 
 
-#define CSKREEN2_H_
 
-#include "CAgent.h"
-#include <iostream>
+#pragma once
+#include <iomanip>
+#include "CBasicSkreen.h"
+#include "CSkreen.h"
 
-using std::cout;
-class CSkreen2
-{
-public:
-
+class CSkreen2 : public CBasicSkreen{
 	CAgent agent;
-
-
-	void GraphScreen(const CAgent& agent);
-	void ScreenField(unsigned int, string, unsigned int, unsigned int, string, unsigned int);
-
-	CSkreen2(const CAgent& agent);
-
+public:
 	CSkreen2();
-	~CSkreen2();
+	CSkreen2(const CAgent& agent);
+	virtual ~CSkreen2();
+
+    void ShowHeader();
+    void ShowContent(const CAgent& agent);
+    void ShowFooter();
+//	void GraphScreen(const CAgent& agent);
+	void ScreenField(int, std::string, int, int, std::string, int);
 
 
 };
+
+
+
