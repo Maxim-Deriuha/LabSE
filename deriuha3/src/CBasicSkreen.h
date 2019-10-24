@@ -12,14 +12,16 @@
 
 class CBasicSkreen {
 	CAgent agent;
-
+	CAgentRob agent_rob;
 public:
 	CBasicSkreen();
+	CBasicSkreen(const CAgent& ob);
+	CBasicSkreen(const CAgentRob &ob);
 	virtual ~CBasicSkreen();
 
 	virtual void ShowHeader();
-	virtual void ShowContent(const CAgent& agent);
+	virtual void ShowContent();
 	virtual void ShowFooter();
-	void Display(const CAgent& agent);
+	void Display();
 };
 

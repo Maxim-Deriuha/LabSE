@@ -10,10 +10,11 @@
 #include "CAgent.h"
 
 class CAgentRob:public CAgent{
+public:
 	std::string type_firmware;
 	int mazh_number;
 	int min_number;
-public:
+
 	CAgentRob();
 	CAgentRob(int nickname_length,std::string nickname,int unic_id,int type_specialty,std::string type_firmware, int mazh_number,int min_number);
 	virtual ~CAgentRob();

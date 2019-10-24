@@ -22,6 +22,14 @@ CSkreen2::CSkreen2() {
 
 }
 
+CSkreen2::CSkreen2(const CAgent& ob){
+	agent.nickname_length = ob.nickname_length;
+	agent.nickname = ob.nickname;
+	agent.type_specialty = ob.type_specialty;
+	agent.unic_id = ob.unic_id;
+}
+
+
 CSkreen2::~CSkreen2() {
 	// TODO Auto-generated destructor stub
 }
@@ -64,7 +72,7 @@ void  CSkreen2::ShowHeader() {
 	std::cout << "agent: " << std::endl << std::endl;
 }
 
-void  CSkreen2::ShowContent(const CAgent& agent) {
+void  CSkreen2::ShowContent() {
 
 //	 head
 

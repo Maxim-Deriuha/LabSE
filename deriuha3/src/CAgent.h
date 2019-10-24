@@ -13,12 +13,12 @@
 using std::string;
 
 class CAgent {
-protected:
+public:
 	int nickname_length;
 	std::string nickname;
 	int unic_id;
 	int type_specialty;
-public:
+
 	CAgent():nickname_length(0),nickname(),unic_id(0),type_specialty(0){}
 	CAgent(	int nickname_length,std::string nickname,int unic_id,int type_specialty);
 	virtual ~CAgent();

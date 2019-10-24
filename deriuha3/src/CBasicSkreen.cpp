@@ -12,6 +12,23 @@ CBasicSkreen::CBasicSkreen() {
 
 }
 
+CBasicSkreen::CBasicSkreen(const CAgent& ob) {
+	agent.nickname_length = ob.nickname_length;
+	agent.nickname = ob.nickname;
+	agent.type_specialty = ob.type_specialty;
+	agent.unic_id = ob.unic_id;
+}
+
+CBasicSkreen::CBasicSkreen(const CAgentRob &ob) {
+	agent_rob.nickname_length = ob.nickname_length;
+	agent_rob.nickname = ob.nickname;
+	agent_rob.type_specialty = ob.type_specialty;
+	agent_rob.unic_id = ob.unic_id;
+	agent_rob.type_firmware = ob.type_firmware;
+	agent_rob.mazh_number = ob.mazh_number;
+	agent_rob.min_number = ob.min_number;
+}
+
 CBasicSkreen::~CBasicSkreen() {
 	// TODO Auto-generated destructor stub
 }
@@ -21,7 +38,7 @@ void CBasicSkreen::ShowHeader() {
 	std::cout << "agent: " << std::endl << std::endl;
 }
 
-void CBasicSkreen::ShowContent(const CAgent& agent) {
+void CBasicSkreen::ShowContent() {
 
 	std::cout << "agent: " << std::endl << std::endl;
 	std::cout << "unique_identifier = " << agent.getUnic_Id() << std::endl;
@@ -35,9 +52,9 @@ void CBasicSkreen::ShowFooter() {
 	std::cout << "view: base" << std::endl << std::endl;
 }
 
-void CBasicSkreen::Display(const CAgent& agent) {
+void CBasicSkreen::Display() {
 
 	ShowHeader();
-	ShowContent(agent);
+	ShowContent();
 	ShowFooter();
 }
