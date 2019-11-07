@@ -15,6 +15,7 @@ class CSkreen3: public CSkreen2{
 	CSkreen b;
 public:
 	CSkreen3();
+
 	CSkreen3(const CAgentRob &ob);
 	virtual ~CSkreen3();
 

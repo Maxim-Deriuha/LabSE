@@ -89,7 +89,7 @@ void  CSkreen2::ShowContent() {
 
 		ScreenField(7, "unique_identifier", 6, 6, std::to_string(agent.getUnic_Id()), 0);
 		ScreenField(7, "NicknameLength", 7, 7, std::to_string(agent.getNicknameLength()), 1);
-		ScreenField(7, "width", 7, 7, (agent.getNickname()), 6);
+		ScreenField(7, "nickname", 7, 7, (agent.getNickname()), 6);
 		ScreenField(7, "type_specialty", 7, 7, std::to_string(agent.getType_specialty()), 1);
 		ScreenField(7, "lenght_nick", 7, 7, std::to_string(agent.CheckSum()), 4);
 	}

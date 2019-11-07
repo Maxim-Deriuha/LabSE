@@ -17,7 +17,23 @@ using namespace std;
 //#include "CTimer.h"
 #include "StorageInterface.h"
 #include "FileStorage.h"
+#include "CAgentVector.h"
 int main(){
+
+		CAgentRob* agent2 = new CAgentRob(2,"James bond2", 13, 2,"IOS10",10,2);
+	    CAgentVector vector;
+	    CBasicSkreen* screen = new CSkreen2();
+	    CAgent* firstCAgent = new CAgent(3,"J5ames bond2", 12, 20);
+		vector.Add(firstCAgent);
+		CAgent* secondCAgent = new CAgent(3,"J8ames bond2", 12, 21);
+		vector.Add(secondCAgent);
+		CAgent* thirdCAgent = new CAgent(3,"J8ames bond2", 12, 21);
+		vector.Add(thirdCAgent);
+		vector.Display2(thirdCAgent);
+        std::cout << "Colection" << std::endl;
+		// —борка мусора
+		delete screen;
+		delete agent2;
 
 	CAgent *agent_serializable = new CAgent(2,"James bond2", 13, 2);
 

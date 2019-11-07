@@ -46,7 +46,7 @@ void CSkreen3::ShowContent(){
 
 		ScreenField(7, "unique_identifier", 6, 6, std::to_string(a.unic_id), 0);
 		ScreenField(7, "NicknameLength", 7, 7, std::to_string(a.nickname_length), 1);
-		ScreenField(7, "width", 7, 7, (a.nickname), 6);
+		ScreenField(7, "nickname", 7, 7, (a.nickname), 6);
 		ScreenField(7, "type_specialty", 7, 7, std::to_string(a.type_specialty), 1);
 		ScreenField(7, "lenght_nick", 7, 7, std::to_string(a.CheckSum()), 4);
 		ScreenField(7, "type_firmware", 7, 7, (a.type_firmware), 4);

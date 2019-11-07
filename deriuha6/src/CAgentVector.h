@@ -40,6 +40,7 @@ public:
 	/**
 	 * Пустой деструктор.
 	 */
+	void Display2(CAgent* agent);
 	virtual ~CAgentVector();
 
 	/**

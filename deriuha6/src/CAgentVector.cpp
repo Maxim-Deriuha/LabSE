@@ -7,9 +7,7 @@
 
 #include "CAgentVector.h"
 
-CAgentVector::CAgentVector() :
-		iSize(0), iCollection(new CAgent*[iSize]) {
-		}
+CAgentVector::CAgentVector() :iSize(0), iCollection(new CAgent*[iSize]) {	}
 
 CAgentVector::~CAgentVector() {
 	delete[] iCollection;
@@ -81,3 +79,14 @@ void CAgentVector::OnLoad(istream& aStream) {
 		iCollection[i] = powerSupply;
 	}
 }
+void CAgentVector::Display2(CAgent* agent) {
+	    std::cout << "agent: " << std::endl << std::endl;
+		std::cout << "unique_identifier = " << agent->getUnic_Id() << std::endl;
+		std::cout << "nickname_length= " << agent->getNicknameLength() << std::endl;
+		std::cout << "nickname= " << agent->getNickname() << std::endl;
+		std::cout << "type_specialty= " << agent->getType_specialty() << std::endl;
+		std::cout << "nick_dlin : " << agent->CheckSum() << std::endl;
+
+
+}
+
